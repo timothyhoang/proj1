@@ -1,0 +1,39 @@
+(assign x "string")
+(function (foo1) (assign x 1))
+(function (foo2 y) (struct 1 "boo"))
+(function (foo3 x y z) (sequence (assign x "test1") (assign y "test2")))
+
+(assign str "hello")
+(function (foo3 x) (assign y "puggle"))
+(assign str2 "ok")
+(function (foo4 x) (assign y "puggle"))
+(stringprint "what???")
+
+(function (foo1) (assign x 1))
+(function (foo2 y) (+ y 1))
+(function (foo3 x y z) (sequence (assign x "test1") (assign y "test2")))
+
+(assign x (+ x 1))
+
+(assign x (+ 2 1))
+(assign a "button")
+(function (foo c d e f g) (assign c 1))
+(assign a (foo x))
+
+(assign b 1)
+(function (f x) (+ c 1))
+(intprint x)
+
+(assign c 1)
+(function (b a b) (+ c b))
+(assign b 1)
+(function (foo) (sequence (assign a 1) (+ c 1)))
+(+ a 2)
+
+(and (function (foo a b) (+ 1 2)) 1)
+(intprint (+ 3 1                ))
+
+( intprint (- 3 6) )
+(intprint (/ 6  3))
+(+ (+ a b) (+ c d))
+(testing token lexer)

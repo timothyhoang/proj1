@@ -1,0 +1,7 @@
+(assign x "string")
+(assign y "bee")
+(assign z (struct 1 2 "three"))
+(+ 1 2)
+(function (foo) (assign x "cee"))
+(assign a (struct 1 2 3 4 5))
+(assign b (struct 1 2 3 4))
